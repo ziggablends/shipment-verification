@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Blocks all outside connections: no analytics, fonts, trackers or form submission. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Shipment Verification Review</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="toolbar no-print" role="toolbar" aria-label="Document actions">
+  <button type="button" id="btn-print">Print / Save as PDF</button>
+  <button type="button" id="btn-copy">Copy responses as text</button>
+  <button type="button" id="btn-clear" class="secondary">Clear responses</button>
+  <span id="toolbar-status" class="toolbar-status" role="status" aria-live="polite"></span>
+</div>
+
+<main class="paper">
+
+  <header class="doc-header">
+    <p class="doc-kicker">Due-Diligence Questionnaire · Request for Information</p>
+    <h1>Shipment Verification, Carrier Authentication &amp; Insurance Charge Review</h1>
+
+    <dl class="meta">
+      <div><dt>Document reference</dt><dd data-field="documentRef">[Not yet provided]</dd></div>
+      <div><dt>Date issued</dt><dd data-field="dateIssued">[Not yet provided]</dd></div>
+      <div><dt>Shipment / tracking reference</dt><dd data-field="shipmentReference">To be confirmed by recipient (see item 3.2)</dd></div>
+      <div><dt>Addressed to</dt><dd data-field="addressedTo">[Not yet provided]</dd></div>
+      <div><dt>Requested by</dt><dd data-field="requestedBy">The purchaser and intended consignee</dd></div>
+      <div><dt>Response requested by</dt><dd data-field="responseBy">[Not yet provided]</dd></div>
+    </dl>
+
+    <p class="notice">
+      <strong>Nature of this document.</strong> This is a private request for information prepared by the
+      purchaser and intended recipient of the shipment. It is <strong>not</strong> issued by, or on behalf of,
+      a lawyer, law firm, court, government agency, or regulatory authority, and it does not assert any
+      finding of wrongdoing by any party.
+    </p>
+  </header>
+
+  <!-- ===================== SECTION 1 ===================== -->
+  <section class="section" aria-labelledby="s1">
+    <h2 id="s1"><span class="sec-num">1</span>Purpose of this Request</h2>
+
+    <p>
+      A further payment of <strong>USD 500</strong>, described as a refundable insurance charge, has been requested
+      in connection with the shipment referenced above. Before any additional payment is considered, the
+      recipient of this document is asked to provide <strong>independently verifiable documentation</strong>
+      establishing the identity of the carrier, the existence and status of the shipment, and the legal and
+      contractual basis for the requested charge.
+    </p>
+
+    <h3>1.1 Background as understood by the requesting party</h3>
+    <ol class="facts">
+      <li>An order was placed with a seller operating on Telegram under the username <code>@annievendor</code>,
+        associated with a channel named “GBL Peptides Supplier”.</li>
+      <li>Approximately <strong>USD 483</strong> was paid in Bitcoin for the order, inclusive of shipping.</li>
+      <li>After the payment was accepted, the requesting party was informed that orders shipped from a Canadian
+        warehouse were subject to a minimum order value of approximately <strong>USD 800</strong>. An additional
+        payment was made to satisfy this requirement, which had not been disclosed before the original payment.</li>
+      <li>An entity identifying itself as “United Ace Cargo” subsequently contacted the requesting party via
+        WhatsApp, using contact details provided during the ordering process, and requested a payment of
+        <strong>USD 500</strong> described as insurance, stated to be refundable after delivery.</li>
+      <li>This insurance charge was not disclosed before payment was made to the seller.</li>
+      <li>The explanations received regarding the shipment’s origin, warehouse requirements, and insurance
+        obligations have differed between communications.</li>
+      <li>The website presented for the cargo entity (<code>https://united.acecargo-ex.com</code>) appears to
+        reference more than one business identity.</li>
+    </ol>
+    <p class="small">
+      The points above reflect the requesting party’s records and understanding. If any point is inaccurate,
+      please identify it and provide supporting documentation.
+    </p>
+
+    <h3>1.2 How to respond</h3>
+    <ul>
+      <li>Answer each numbered item. Where an item does not apply, state “Not applicable” and explain why.</li>
+      <li>Supply documents as complete, unedited copies (original PDF files or clear, uncropped photographs).
+        Chat screenshots or summaries are not a substitute for the underlying documents.</li>
+      <li>Responses may be typed into the fields on this page and returned using the
+        <em>Copy responses as text</em> or <em>Print / Save as PDF</em> buttons, or supplied in any other
+        written form that references the item numbers.</li>
+    </ul>
+  </section>
+
+  <!-- ===================== SECTION 2 ===================== -->
+  <section class="section" aria-labelledby="s2">
+    <h2 id="s2"><span class="sec-num">2</span>Legal Business Identity</h2>
+    <p class="section-intro">Please identify the legal entity responsible for this shipment and for the requested charge.</p>
+
+    <div class="q">
+      <label class="q-label" for="a-2-1"><span class="q-num">2.1</span><span class="q-text">Full registered legal business name of the entity responding.</span></label>
+      <textarea id="a-2-1" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-2"><span class="q-num">2.2</span><span class="q-text">Any trading names used, and an explanation of each business name or identity that appears on the website united.acecargo-ex.com.</span></label>
+      <textarea id="a-2-2" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-3"><span class="q-num">2.3</span><span class="q-text">Country and jurisdiction (state / province) of registration.</span></label>
+      <textarea id="a-2-3" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-4"><span class="q-num">2.4</span><span class="q-text">Business registration number, and the name of the official public registry in which it can be checked.</span></label>
+      <textarea id="a-2-4" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-5"><span class="q-num">2.5</span><span class="q-text">Registered business address.</span></label>
+      <textarea id="a-2-5" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-6"><span class="q-num">2.6</span><span class="q-text">Physical operating address (if different from the registered address).</span></label>
+      <textarea id="a-2-6" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-7"><span class="q-num">2.7</span><span class="q-text">Legal names of the actual carrier (e.g. airline or courier) transporting the shipment, and of any freight forwarder involved.</span></label>
+      <textarea id="a-2-7" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-8"><span class="q-num">2.8</span><span class="q-text">Official contact details (business telephone, business email domain, website) that can be confirmed through a source independent of this correspondence, such as a public registry or industry directory. Please name that source.</span></label>
+      <textarea id="a-2-8" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-2-9"><span class="q-num">2.9</span><span class="q-text">The nature of any commercial, contractual, or ownership relationship between the responding entity and the seller operating as <code>@annievendor</code> / “GBL Peptides Supplier”.</span></label>
+      <textarea id="a-2-9" class="answer" rows="3"></textarea>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3 ===================== -->
+  <section class="section" aria-labelledby="s3">
+    <h2 id="s3"><span class="sec-num">3</span>Shipment Verification</h2>
+    <p class="section-intro">Please provide documentation confirming that the shipment exists and has been accepted by a carrier.</p>
+
+    <div class="q">
+      <label class="q-label" for="a-3-1"><span class="q-num">3.1</span><span class="q-text">A copy of the carrier-issued air waybill (AWB) or equivalent consignment note for this shipment.</span></label>
+      <textarea id="a-3-1" class="answer" rows="2" placeholder="State whether attached, and the file name."></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-2"><span class="q-num">3.2</span><span class="q-text">Tracking or consignment number, and the name of the carrier whose own official tracking system shows this number.</span></label>
+      <textarea id="a-3-2" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-3"><span class="q-num">3.3</span><span class="q-text">Date on which the shipment was accepted by the carrier, and the facility at which it was accepted.</span></label>
+      <textarea id="a-3-3" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-4"><span class="q-num">3.4</span><span class="q-text">Origin of the shipment (city, country, and dispatching warehouse or sender).</span></label>
+      <textarea id="a-3-4" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-5"><span class="q-num">3.5</span><span class="q-text">Destination as recorded on the shipping documents.</span></label>
+      <textarea id="a-3-5" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-6"><span class="q-num">3.6</span><span class="q-text">Current shipment status and current physical location.</span></label>
+      <textarea id="a-3-6" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-7"><span class="q-num">3.7</span><span class="q-text">Identity of the party that booked the shipment and the party that paid for carriage.</span></label>
+      <textarea id="a-3-7" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-8"><span class="q-num">3.8</span><span class="q-text">If the parcel is being held, the legal name and full address of the warehouse, carrier, or customs facility currently holding it, and the reason it is being held.</span></label>
+      <textarea id="a-3-8" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-3-9"><span class="q-num">3.9</span><span class="q-text">A copy of any commercial invoice or customs declaration accompanying the shipment.</span></label>
+      <textarea id="a-3-9" class="answer" rows="2" placeholder="State whether attached, and the file name."></textarea>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4 ===================== -->
+  <section class="section" aria-labelledby="s4">
+    <h2 id="s4"><span class="sec-num">4</span>Insurance Verification</h2>
+    <p class="section-intro">Please substantiate the requested USD 500 insurance charge.</p>
+
+    <div class="q">
+      <label class="q-label" for="a-4-1"><span class="q-num">4.1</span><span class="q-text">Full legal name of the insurer underwriting the cover.</span></label>
+      <textarea id="a-4-1" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-2"><span class="q-num">4.2</span><span class="q-text">Policy number and/or certificate of insurance number applicable to this shipment.</span></label>
+      <textarea id="a-4-2" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-3"><span class="q-num">4.3</span><span class="q-text">A copy of the applicable policy terms and the certificate of insurance.</span></label>
+      <textarea id="a-4-3" class="answer" rows="2" placeholder="State whether attached, and the file name."></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-4"><span class="q-num">4.4</span><span class="q-text">Why the USD 500 payment is mandatory, and the specific rule, regulation, or contract term that makes it so.</span></label>
+      <textarea id="a-4-4" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-5"><span class="q-num">4.5</span><span class="q-text">Whether the payment is an insurance premium, a deposit, a security payment, or another type of charge, and how the amount was calculated.</span></label>
+      <textarea id="a-4-5" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-6"><span class="q-num">4.6</span><span class="q-text">Full legal identity of the party that would receive the payment, and the account or payment method in that party’s legal name.</span></label>
+      <textarea id="a-4-6" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-7"><span class="q-num">4.7</span><span class="q-text">Identity of the party legally responsible for any refund.</span></label>
+      <textarea id="a-4-7" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-8"><span class="q-num">4.8</span><span class="q-text">The exact conditions under which a refund would be made, the method of refund, and the expected timeline.</span></label>
+      <textarea id="a-4-8" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-9"><span class="q-num">4.9</span><span class="q-text">Contact details for the insurer that can be confirmed independently (for example, through the insurer’s own public website or an insurance regulator’s register), so that the policy can be confirmed directly with the insurer.</span></label>
+      <textarea id="a-4-9" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-4-10"><span class="q-num">4.10</span><span class="q-text">What will happen to the shipment if the USD 500 payment is not made.</span></label>
+      <textarea id="a-4-10" class="answer" rows="2"></textarea>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 5 ===================== -->
+  <section class="section" aria-labelledby="s5">
+    <h2 id="s5"><span class="sec-num">5</span>Original Contractual Basis</h2>
+    <p class="section-intro">Please identify the written terms that establish the additional charges.</p>
+
+    <div class="q">
+      <label class="q-label" for="a-5-1"><span class="q-num">5.1</span><span class="q-text">A copy of the original written terms, invoice, or policy that establishes the USD 500 charge.</span></label>
+      <textarea id="a-5-1" class="answer" rows="2" placeholder="State whether attached, and the file name."></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-5-2"><span class="q-num">5.2</span><span class="q-text">The date on which this requirement was introduced.</span></label>
+      <textarea id="a-5-2" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-5-3"><span class="q-num">5.3</span><span class="q-text">The party that imposed the requirement (seller, carrier, forwarder, insurer, or customs authority).</span></label>
+      <textarea id="a-5-3" class="answer" rows="2"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-5-4"><span class="q-num">5.4</span><span class="q-text">Why the requirement was not disclosed before the original purchase was completed.</span></label>
+      <textarea id="a-5-4" class="answer" rows="3"></textarea>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-5-5"><span class="q-num">5.5</span><span class="q-text">The written terms (if any) that established the approximately USD 800 minimum order value for Canadian-warehouse orders, and when they were first communicated to the requesting party.</span></label>
+      <textarea id="a-5-5" class="answer" rows="3"></textarea>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 6 ===================== -->
+  <section class="section" aria-labelledby="s6">
+    <h2 id="s6"><span class="sec-num">6</span>Written Declaration by Respondent</h2>
+    <p class="section-intro">Please identify who is providing the information in this response.</p>
+
+    <div class="grid-2">
+      <div class="q">
+        <label class="q-label" for="a-6-1"><span class="q-num">6.1</span><span class="q-text">Full name of the person responding</span></label>
+        <input id="a-6-1" class="answer" type="text" autocomplete="off">
+      </div>
+      <div class="q">
+        <label class="q-label" for="a-6-2"><span class="q-num">6.2</span><span class="q-text">Role / position</span></label>
+        <input id="a-6-2" class="answer" type="text" autocomplete="off">
+      </div>
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-6-3"><span class="q-num">6.3</span><span class="q-text">Legal entity represented</span></label>
+      <input id="a-6-3" class="answer" type="text" autocomplete="off">
+    </div>
+    <div class="q">
+      <label class="q-label" for="a-6-4"><span class="q-num">6.4</span><span class="q-text">Source of the information provided (e.g. carrier system, company records, insurer, third party)</span></label>
+      <textarea id="a-6-4" class="answer" rows="2"></textarea>
+    </div>
+
+    <p class="declaration">
+      I confirm that the information and documents supplied in this response are, to the best of my knowledge,
+      accurate and complete, and that I am authorised to provide them on behalf of the entity named above.
+    </p>
+
+    <div class="grid-2">
+      <div class="q">
+        <label class="q-label" for="a-6-5"><span class="q-num">6.5</span><span class="q-text">Signature (or typed full name)</span></label>
+        <input id="a-6-5" class="answer signature" type="text" autocomplete="off">
+      </div>
+      <div class="q">
+        <label class="q-label" for="a-6-6"><span class="q-num">6.6</span><span class="q-text">Date</span></label>
+        <input id="a-6-6" class="answer" type="text" autocomplete="off" placeholder="DD / MM / YYYY">
+      </div>
+    </div>
+    <p class="small">
+      This declaration records who supplied the information and on what basis. Signing it does not by itself
+      create a contract or a legally binding obligation; any legal significance would depend on the
+      applicable law and circumstances.
+    </p>
+  </section>
+
+  <!-- ===================== SECTION 7 ===================== -->
+  <section class="section" aria-labelledby="s7">
+    <h2 id="s7"><span class="sec-num">7</span>Verification and Response</h2>
+    <ul>
+      <li>All documents, registration details, and contact information supplied will be <strong>independently
+        verified</strong>, including by checking official business registries, the carrier’s own tracking
+        systems, and the insurer directly, using contact details obtained from sources independent of this
+        correspondence.</li>
+      <li><strong>No further payment will be made</strong> until the requested information has been received
+        and reviewed.</li>
+      <li>Incomplete responses, documents that cannot be verified, or a request for payment in place of the
+        information requested will be noted as such in the review.</li>
+      <li>Receipt of a response does not imply acceptance of any charge.</li>
+    </ul>
+  </section>
+
+  <!-- ===================== ANNEX A ===================== -->
+  <section class="section annex" aria-labelledby="sA">
+    <h2 id="sA"><span class="sec-num">A</span>Supporting Documents Register <span class="optional">(optional)</span></h2>
+    <p class="section-intro">
+      For use by the requesting party to record documents received and the outcome of independent verification.
+    </p>
+
+    <div class="table-wrap">
+      <table class="register" id="register">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Document</th>
+            <th scope="col">Date received</th>
+            <th scope="col">Verification method</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="#">A1</td>
+            <td data-label="Document">Business registration certificate (item 2.4)</td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A1 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A1 verification method" placeholder="e.g. official registry search"></td>
+            <td data-label="Status"><select class="answer" aria-label="A1 status"></select></td>
+          </tr>
+          <tr>
+            <td data-label="#">A2</td>
+            <td data-label="Document">Air waybill / consignment note (item 3.1)</td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A2 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A2 verification method" placeholder="e.g. carrier’s official tracking site"></td>
+            <td data-label="Status"><select class="answer" aria-label="A2 status"></select></td>
+          </tr>
+          <tr>
+            <td data-label="#">A3</td>
+            <td data-label="Document">Commercial invoice / customs declaration (item 3.9)</td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A3 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A3 verification method"></td>
+            <td data-label="Status"><select class="answer" aria-label="A3 status"></select></td>
+          </tr>
+          <tr>
+            <td data-label="#">A4</td>
+            <td data-label="Document">Certificate of insurance (item 4.3)</td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A4 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A4 verification method" placeholder="e.g. confirmed with insurer directly"></td>
+            <td data-label="Status"><select class="answer" aria-label="A4 status"></select></td>
+          </tr>
+          <tr>
+            <td data-label="#">A5</td>
+            <td data-label="Document">Insurance policy terms (item 4.3)</td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A5 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A5 verification method"></td>
+            <td data-label="Status"><select class="answer" aria-label="A5 status"></select></td>
+          </tr>
+          <tr>
+            <td data-label="#">A6</td>
+            <td data-label="Document">Written terms / invoice for additional charges (items 5.1, 5.5)</td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A6 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A6 verification method"></td>
+            <td data-label="Status"><select class="answer" aria-label="A6 status"></select></td>
+          </tr>
+          <tr>
+            <td data-label="#">A7</td>
+            <td data-label="Document"><input class="answer" type="text" aria-label="A7 document" placeholder="Other document"></td>
+            <td data-label="Date received"><input class="answer" type="text" aria-label="A7 date received"></td>
+            <td data-label="Verification method"><input class="answer" type="text" aria-label="A7 verification method"></td>
+            <td data-label="Status"><select class="answer" aria-label="A7 status"></select></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <p>
+      Prepared by the requesting party for the purpose of verifying a shipment and an associated charge.
+      This document is not a legal notice and is not issued by any legal, governmental, or regulatory body.
+    </p>
+    <p class="no-print">
+      Privacy: this page uses no cookies, analytics, or tracking, and it does not transmit anything typed into
+      it. Responses stay in this browser window until copied, printed, or the page is closed.
+    </p>
+  </footer>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
